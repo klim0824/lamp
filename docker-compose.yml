@@ -17,7 +17,7 @@ services:
   php:
     build: ./php
     ports:
-      - '80:80'
+      - '8080:80'
     volumes:
       - ./public:/var/www/html
     depends_on:
@@ -33,7 +33,7 @@ services:
     links:
       - mysql:mysql
     ports:
-      - 8080:80
+      - 18080:80
     volumes:
       - pma_sessions:/sessions
 volumes:
