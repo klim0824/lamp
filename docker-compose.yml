@@ -19,7 +19,7 @@ services:
     ports:
       - '80:80'
     volumes:
-      - ./html:/var/www/html
+      - ./public:/var/www/html
     depends_on:
       - mysql
 
